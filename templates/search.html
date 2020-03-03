@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% if data %}
+        {% for i in data %}
+            <h2><i>Flight Details</i></h2>
+            <b></b> to <b>{{ i.destinations }}</b><br>
+            <b>Flight number:</b>{{ i.flightnumbers }} <br>
+            <b>Airline:</b>{{ i.airline }}<br>
+            <b>STATUS:</b>{{ i.status }}<br>
+            <b>Sec Depart Time:</b> {{ i.scheduledtime }}<br>
+            <b>Est Depart Time:</b> {{ i.estimatedtime }}<br>
+            <b>Sec Depart Date:</b> {{ i.scheduleddate }}<br>
+            <b>Est Depart Date:</b> {{ i.latesttime }}
+        {% endfor %}
+    {% else %}
+        <p>Enter a valid Fight Number</p>
+    {% endif %}
+{% endblock %}
