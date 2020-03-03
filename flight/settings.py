@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'flight_db',
         'USER': 'postgres',
-        'PASSWORD': 'shubham124',
+        'PASSWORD': 'admin124',
         'HOST': 'localhost',
         'PORT': '5432',
     }
